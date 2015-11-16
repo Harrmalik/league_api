@@ -1,0 +1,25 @@
+{
+  "name": "league_api",
+  "version": "0.0.1",
+  "description": "League API to get match and champion history",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "League",
+    "League-API",
+    "API",
+    "Champions",
+    "Match",
+    "History"
+  ],
+  "author": "Malik Harrison",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect-mongo": "^0.8.2",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.5"
+  }
+}
