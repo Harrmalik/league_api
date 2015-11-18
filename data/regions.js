@@ -15,9 +15,7 @@ module.exports = [
     "title":"North America"},
     {"value":"oce",
     "title":"Oceania"},
-    {"value":"pbe",
-    "title":"Public Beta Environment"},
-    {"value":"rb",
+    {"value":"ru",
     "title":"Russia"},
     {"value":"tr",
     "title":"Turkey"}

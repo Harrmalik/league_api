@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+require('./models/Matches.js');
 var mongoose = require("mongoose");
 var connectMongo = require("connect-mongo");
 
@@ -11,7 +12,6 @@ var app = express();
 app.use(bodyParser.json());
 app.use('/', api);
 
-var debug = require('debug')('main');
 var http = require('http');
 
 /**
@@ -92,5 +92,4 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
 }
