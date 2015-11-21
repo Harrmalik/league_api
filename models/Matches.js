@@ -6,6 +6,7 @@ var matchSchema = new Schema({
   region: {type: String},
   matchMode: {type: String},
   queueType: {type: String},
+  matchVersion: String,
   matchCreation: Date,
   season: {type: String},
   champions: [{

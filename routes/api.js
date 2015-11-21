@@ -37,8 +37,8 @@ setInterval( function(){
       var match = new Match();
       match.matchID = body.matchId,
       match.region = body.region,
-      match.date = new Date(body.matchCreation),
-      match.gameMode = body.matchMode,
+      match.matchCreation = new Date(body.matchCreation),
+      match.matchMode = body.matchMode,
       match.queueType = body.queueType,
       match.season = body.season,
       match.champions = championsPlayed
