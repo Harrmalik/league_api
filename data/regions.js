@@ -1,43 +1,39 @@
 module.exports = [
     {"value":"br",
     "title":"Brazil",
-    "start": 655344228
+    "startID": 654285624
     },
     {"value":"eune",
     "title":"EU Nordic & East",
-    "start": 1288146074
+    "startID": 1287087462
     },
     {"value":"euw",
     "title":"EU West",
-    "start": 2397081719
+    "startID": 2396023113
     },
     {"value":"kr",
     "title":"Korea",
-    "start": 2172012464
+    "startID": 2170953860
     },
     {"value":"lan",
     "title":"Latin America North",
-    "start": 655344228
+    "startID": 223743225
     },
     {"value":"las",
     "title":"Latin America South",
-    "start": 655344228
-    },
-    {"value":"na",
-    "title":"North America",
-    "start": 2015355974
+    "startID": 264865877
     },
     {"value":"oce",
     "title":"Oceania",
-    "start": 112545373
+    "startID": 111486770
     },
-    {"value":"rb",
+    {"value":"ru",
     "title":"Russia",
-    "start": 326841403
+    "startID": 82154918
     },
     {"value":"tr",
     "title":"Turkey",
-    "start": 326841403
+    "startID": 325782810
     }
     ]
 ;

@@ -1,0 +1,18 @@
+//get the last id to start the server with
+query = db.matches.aggregate([
+  {$group:
+    {_id: "$region",
+    lastID: {$min:"$matchID"}
+    }
+  },
+  {$sort:{_id:1}}
+])
+
+db.matches.aggregate([
+  {$group:
+    {
+      _id: "$region",
+      count: {$sum: 1}
+    }
+  }
+])

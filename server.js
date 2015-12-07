@@ -4,7 +4,7 @@ require('./models/Matches.js');
 var mongoose = require("mongoose");
 var connectMongo = require("connect-mongo");
 
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://localhost:27017/league');
 
 var api = require("./routes/api");
 
