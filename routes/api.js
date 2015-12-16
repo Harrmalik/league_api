@@ -8,14 +8,8 @@ var Match = mongoose.model('Match');
 var ny =
 {"value":"na",
 "title":"North America",
-"startID": 2014586971
+"startID": 2014502562
 }
-
-router.get('/', function(req, res, next){
-  res.send("hey");
-});
-// //1989504754
-// var startID = 1989587210;
 
 key = 0;
 
