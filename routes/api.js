@@ -9,7 +9,7 @@ var buildMatch = require('../models/convertData.js');
 var na =
 {"value":"na",
 "title":"North America",
-"startID": 2014502563
+"startID": 2063559734
 }
 
 key = 0;
@@ -20,7 +20,7 @@ setInterval( function(){
    request.get(method + keys[key], function (error, response, body) {
       if (!error && response.statusCode == 200) {
       body = JSON.parse(body);
-         if (body.matchType == "MATCHED_GAME" && body.matchMode == "CLASSIC") {
+         if (body.matchType == "MATCHED_GAME") {
 
             match = buildMatch(body);
 
@@ -34,10 +34,10 @@ setInterval( function(){
       }
    });
 
-  regions[i].start++;
-  console.log(regions[i].start);
-  console.log("done");
+  regions[i].start--;
+  console.log(regions[i].value + ": " + regions[i].start);
 }
+console.log(" ");
 key++;
 key = key % 3;
 }, 500);
@@ -47,7 +47,7 @@ setInterval( function(){
       request.get(method + keys[key], function (error, response, body) {
       if (!error && response.statusCode == 200) {
          body = JSON.parse(body);
-         if (body.matchType == "MATCHED_GAME" && body.matchMode == "CLASSIC") {
+         if (body.matchType == "MATCHED_GAME") {
 
             match = buildMatch(body);
 
@@ -61,9 +61,8 @@ setInterval( function(){
       }
    });
 
-na.startID++;
-console.log(na.startID);
-console.log("NA");
+na.startID--;
+console.log("NA: " + na.startID);
 key = key % 3;
 }, 700);
 

@@ -37,36 +37,6 @@ buildMatch = function(body) {
          lane: body.participants[i].timeline.lane,
          runes: buildRunes,
          masteries: buildMasteries,
-         timeline: {
-               creepsPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.creepsPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.creepsPerMinDeltas.tenToTwenty
-            },
-               xpPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.xpPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.xpPerMinDeltas.tenToTwenty
-            },
-               goldPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.goldPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.goldPerMinDeltas.tenToTwenty
-            },
-               csDiffPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.goldPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.goldPerMinDeltas.tenToTwenty
-            },
-               xpDiffPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.goldPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.goldPerMinDeltas.tenToTwenty
-            },
-               damageTakenPerMinDeltas: {
-               zeroToTen: body.participants[i].timeline.goldPerMinDeltas.zeroToTen,
-               tenToTwenty: body.participants[i].timeline.goldPerMinDeltas.tenToTwenty
-            },
-            damageTakenDiffPerMinDeltas: {
-            zeroToTen: body.participants[i].timeline.goldPerMinDeltas.zeroToTen,
-            tenToTwenty: body.participants[i].timeline.goldPerMinDeltas.tenToTwenty
-            }
-         },
          stats: {
             winner: body.participants[i].stats.winner,
             champLevel: body.participants[i].stats.champLevel,
@@ -150,11 +120,13 @@ buildMatch = function(body) {
          firstInhibitor: body.teams[i].firstInhibitor,
          firstBaron: body.teams[i].firstBaron,
          firstDragon: body.teams[i].firstDragon,
+         firstRiftHerald: body.teams[i].firstRiftHerald,
          towerKills: body.teams[i].towerKills,
          inhibitorKills: body.teams[i].inhibitorKills,
          baronKills: body.teams[i].baronKills,
          dragonKills: body.teams[i].dragonKills,
          vilemawKills: body.teams[i].vilemawKills,
+         riftHeraldKills: body.teams[i].riftHeraldKills,
          dominionVictoryScore: body.teams[i].dominionVictoryScore,
          bans: buildBans
       });
