@@ -4,7 +4,7 @@ require('./models/Matches.js');
 var mongoose = require("mongoose");
 var connectMongo = require("connect-mongo");
 
-mongoose.connect('mongodb://localhost:27018/test');
+mongoose.connect('mongodb://192.168.0.4:27018/test');
 
 var api = require("./routes/api");
 
